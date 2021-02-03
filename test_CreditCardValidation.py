@@ -1,4 +1,4 @@
-card_number = list(input("Please enter a card number: ").strip())
+card_number = list(5103720101070215)
 
 # Remove the last digit from the card number
 check_digit = card_number.pop()
