@@ -6,7 +6,7 @@ python:
 install:
   - pip install pytest
   - pip install pytest-cov
-  - pip install coveralls
+  - pip install python-coveralls
 # command to run tests
 script:
   - python CreditCardValidation.py < test.txt
