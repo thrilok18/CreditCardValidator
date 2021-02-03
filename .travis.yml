@@ -9,7 +9,7 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - pytest --cov=CreditCardValidator 
+  - pytest --cov=. 
    
 after_success:
   - coveralls
