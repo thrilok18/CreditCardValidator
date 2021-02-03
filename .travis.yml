@@ -10,7 +10,7 @@ install:
 # command to run tests
 script:
   - python CreditCardValidation.py < test.txt
-
+  - coverage run --CreditCardValidation.py < text.txt
 after_success:
   - TRAVIS_TEST_RESULT
   - coveralls
