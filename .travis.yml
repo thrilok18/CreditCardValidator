@@ -1,6 +1,5 @@
 language: python
 python:
-  - "3.7"
   - "3.8"
   - "3.9"
 # command to install dependencies
@@ -9,3 +8,6 @@ python:
 # command to run tests
 script:
   - python CreditCardValidation.py < test.txt
+
+after_success:
+  - TRAVIS_TEST_RESULT
