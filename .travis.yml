@@ -9,7 +9,7 @@ install:
   - pip install python-coveralls
 # command to run tests
 script:
-  - py.test CreditCardValidation.py < test.txt --cov coveralls
+  - python CreditCardValidation.py < test.txt --cov coveralls --cov report
 
 after_success:
   - TRAVIS_TEST_RESULT
