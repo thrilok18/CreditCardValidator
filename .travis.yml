@@ -4,14 +4,13 @@ python:
   - "3.9"
 # command to install dependencies
 install:
+  - pip install -e
   - pip install pytest
   - pip install pytest-cov
-  - pip install python-coveralls
   - pip install coveralls
 # command to run tests
 script:
-  - pytest --cov=. 
+  - pytest --cov=CreditCardValidation 
    
 after_success:
-  - TRAVIS_TEST_RESULT
   - coveralls
