@@ -1,4 +1,5 @@
-card_number = list(5103720101070215)
+x="5103720101070215"
+card_number = list(x.strip())
 
 # Remove the last digit from the card number
 check_digit = card_number.pop()
